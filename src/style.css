@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero{
+    filter: drop-shadow(1px 1px  30px #090f0d);
+}
+.hidden {
+    display: none;
+  }

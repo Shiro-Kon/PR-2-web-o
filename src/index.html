@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=auto"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="icon" href="/public/images/logo.gif" type="image/x-icon" />
+    <title>HEY BRO</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <header
+      class="w-full h-auto px-6 lg:px-[5em] py-[12px] flex justify-between items-center bg-light-gray-4"
+    >
+      <div>
+        <img src="/public/images/logo.gif" alt="logo" class="w-20 h-20" />
+      </div>
+      <section class="flex text-white text-[1.5em] gap-8 mr-8">
+        <a href="#burgers" class="text-blue-500 scroll-link">Бургери</a>
+        <a href="#contacts" class="text-blue-500 scroll-link">Контакти</a>
+      </section>
+      <button id="btn">
+        <img
+          src="/public/images/burger.png"
+          alt="burger-menu"
+          class="w-12 h-12 invert"
+        />
+      </button>
+    </header>
+
+    <main class="container mx-auto px-6 py-16 flex-grow">
+      <div class="flex justify-start bg-light-gray-4 p-8 rounded-3xl mb-12">
+        <div
+          class="flex flex-col justify-stard text-light-gray-2 ml-[3em] mt-[3em]"
+        >
+          <h3 class="text-[3em] font-bold mb-6 uppercase">Цей сайт про -</h3>
+          <p class="break-words text-[1.5em]">
+            Заклад дуже соковитих та неймовірних бургерів, які ну прям капець
+            смачнучі!
+          </p>
+          <p class="break-words text-[1.5em]">
+            Я зробив header з лого, навігацією та бургер меню. Далі блок таблиця
+            із даними (графік роботи). Потім блоки бургерів де є заголовок,
+            зображення, текстовий блок із деталями або описом. Застосував стилі
+            але через taiwind. А також адаптив сторінки під різні гаджети.
+          </p>
+        </div>
+        <img
+          src="/public/images/hero.gif"
+          alt="burger-giant"
+          class="w-[500px] h-auto ml-[3em] hero"
+        />
+      </div>
+
+      <div class="flex justify-start bg-light-gray-4 p-10 rounded-3xl mb-12">
+        <table class="w-full border border-gray-300 text-light-gray-2">
+          <thead>
+            <tr class="bg-gray-200">
+              <th class="py-2 px-2 border-b"></th>
+              <th class="py-2 px-2 border-b">Понеділок</th>
+              <th class="py-2 px-2 border-b">Вівторок</th>
+              <th class="py-2 px-2 border-b">Середа</th>
+              <th class="py-2 px-2 border-b">Четвер</th>
+              <th class="py-2 px-2 border-b">П'ятниця</th>
+              <th class="py-2 px-2 border-b">Субота</th>
+              <th class="py-2 px-2 border-b">Неділя</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="py-2 px-12 border-b">Початок робочого дня</td>
+              <td class="py-2 px-12 border-b">9:00</td>
+              <td class="py-2 px-12 border-b">9:00</td>
+              <td class="py-2 px-12 border-b">9:00</td>
+              <td class="py-2 px-12 border-b">9:00</td>
+              <td class="py-2 px-12 border-b">9:00</td>
+              <td class="py-2 px-12 border-b">11:00</td>
+              <td class="py-2 px-12 border-b">11:00</td>
+            </tr>
+            <tr>
+              <td class="py-2 px-12 border-b">Кінець робочого дня</td>
+              <td class="py-2 px-12 border-b">17:00</td>
+              <td class="py-2 px-12 border-b">17:00</td>
+              <td class="py-2 px-12 border-b">17:00</td>
+              <td class="py-2 px-12 border-b">17:00</td>
+              <td class="py-2 px-12 border-b">17:00</td>
+              <td class="py-2 px-12 border-b">17:00</td>
+              <td class="py-2 px-12 border-b">17:00</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <section id="burgers" class="mb-8">
+        <h2 class="text-[60px] flex justify-center font-bold mb-16">Бургери</h2>
+        <div class="grid grid-cols-1 gap-4">
+          <div
+            class="flex justify-start bg-light-gray-4 p-10 rounded-3xl mb-12"
+          >
+            <div
+              class="flex flex-col justify-stard text-light-gray-2 text-[16px] ml-[3em]"
+            >
+              <h3 class="text-[2.5em] font-bold mb-6 uppercase">
+                Класичний бургер
+              </h3>
+              <p class="break-words">
+                Бургер "Класичний" — це справжній витвір кулінарного мистецтва,
+                який вразить ваші смакові рецептори. Ніжна яловичина, варена до
+                ідеальної ступені прожарювання, грає в танці зі свіжими овочами
+                та хрустким листям салату. Узгоджений з найсмачнішим сиром та
+                ніжним соусом, цей бургер — справжня насолода для вашого
+                гастрономічного вишукання.
+              </p>
+              <h3 class="text-[1.5em] font-bold my-6">Склад бургера:</h3>
+              <ul class="list-disc list-inside">
+                <li>
+                  М'ясо яловичини, варене до середньої ступені прожарювання
+                </li>
+                <li>Свіжий салат та хрусткий листок салату</li>
+                <li>Соковитий томат та вибрані кільця цибулі</li>
+                <li>Плавленний сир, що тане на гарячому м'ясі</li>
+                <li>
+                  Авторський соус, який додає пікантності та неповторності
+                </li>
+                <li>
+                  М'який булочка, що робить кожен ковток справжнім задоволенням.
+                </li>
+              </ul>
+              <p class="text-[1.5em] my-8">Ціна: 170 грн</p>
+            </div>
+            <img
+              src="/public/images/burgers/Classic.jfif"
+              alt="Classic"
+              class="w-[500px] h-[500px] rounded-2xl ml-[3em]"
+            />
+          </div>
+          <div
+            class="flex justify-start bg-light-gray-4 p-10 rounded-3xl mb-12"
+          >
+            <div
+              class="flex flex-col justify-stard text-light-gray-2 text-[16px] ml-[3em]"
+            >
+              <h3 class="text-[2.5em] font-bold mb-6 uppercase">
+                Морський Лаконічний
+              </h3>
+              <p class="break-words">
+                Бургер "Морський Лаконічний" — ексклюзивний гастрономічний
+                досвід, де чудово поєднуються свіжість морських скарбів та
+                неповторна м'якість авокадо. Ніжність креветок, запечених до
+                золотистої смаження, гармонійно взаємодіє з кремовістю авокадо,
+                створюючи неповторний смаковий букет. Ароматна житня булка, яка
+                обіймає цей кулінарний шедевр, додає багатий гармонійний смак, а
+                соус з креветок надає вишуканості та пікантності.
+              </p>
+              <h3 class="text-[1.5em] font-bold my-6">Склад бургера:</h3>
+              <ul class="list-disc list-inside">
+                <li>Креветки, запечені до золотистої смаження</li>
+                <li>Соковитий шар авокадо, що тане на язичку</li>
+                <li>Листя свіжого салату та томати</li>
+                <li>
+                  Ароматна житня булка, яка відзначається неповторним смаком
+                </li>
+                <li>
+                  Соус з креветок, що вирізняється неповторною пікантністю та
+                  ніжністю.
+                </li>
+              </ul>
+              <p class="text-[1.5em] my-8 uppercase">Ціна: 235 грн</p>
+            </div>
+            <img
+              src="/public/images/burgers/burger-with-shrimp.jfif"
+              alt="burger-with-shrimp"
+              class="w-[500px] h-[500px] rounded-2xl ml-[3em]"
+            />
+          </div>
+          <div
+            class="flex justify-start bg-light-gray-4 p-10 rounded-3xl mb-12"
+          >
+            <div
+              class="flex flex-col justify-stard text-light-gray-2 text-[16px] ml-[3em]"
+            >
+              <h3 class="text-[2.5em] font-bold mb-6 uppercase">
+                Ультра Сирний
+              </h3>
+              <p class="break-words">
+                Бургер "Ультра Сирний" — це справжній рай для поціновувачів
+                сиру. Три соковиті котлети, запечені до золотистої смаження, в
+                поєднанні з ароматним беконом, свіжими помідорами, соленими
+                огірками та листям салату, та великою кількістю різних сирів,
+                роблять цей бургер справжньою вибуховою симфонією смаку. А все
+                це заключено в неймовірно м'яку та апетитну булочку.
+              </p>
+              <h3 class="text-[1.5em] font-bold my-6">Склад бургера:</h3>
+              <ul class="list-disc list-inside">
+                <li>Три соковиті котлети, запечені до золотистої смаження</li>
+                <li>Ароматний бекон</li>
+                <li>Свіжі помідори</li>
+                <li>Солені огірки</li>
+                <li>Листя свіжого салату</li>
+                <li>Різноманіття сирів у великій кількості</li>
+                <li>М'яка та апетитна булочка</li>
+              </ul>
+              <p class="text-[1.5em] my-8 uppercase">Ціна: 275</p>
+            </div>
+            <img
+              src="/public/images/burgers/cheese.jfif"
+              alt="burger-cheese"
+              class="w-[500px] h-[500px] rounded-2xl ml-[3em]"
+            />
+          </div>
+          <div
+            class="flex justify-start bg-light-gray-4 p-10 rounded-3xl mb-12"
+          >
+            <div
+              class="flex flex-col justify-stard text-light-gray-2 text-[16px] ml-[3em]"
+            >
+              <h3 class="text-[2.5em] font-bold mb-6 uppercase">
+                Бургер Курчанський
+              </h3>
+              <p class="break-words">
+                Бургер "Екзотичний Коктейль" — це поєднання ніжної курячої
+                котлети та свіжих фруктів, що створює справжній екзотичний
+                коктейль смаку. Ароматна курка в поєднанні з соковитими
+                ананасами, виноградом та кисло-солодкою клюквою гармонійно
+                розкривають неповторний букет смакових відчуттів. Цей бургер —
+                справжній тропічний рай для вашого пальця на смаковому подіумі.
+              </p>
+              <h3 class="text-[1.5em] font-bold my-6">Склад бургера:</h3>
+              <ul class="list-disc list-inside">
+                <li>Ніжна куряча котлета</li>
+                <li>Свіжі ананаси та виноград</li>
+                <li>Крихкий лист салату</li>
+                <li>Солодко-кисла клюква</li>
+                <li>Солені огірки та томати</li>
+                <li>М'яка булочка, що підкреслює всю екзотичність бургера</li>
+              </ul>
+              <p class="text-[1.5em] my-8 uppercase">Ціна: 255</p>
+            </div>
+            <img
+              src="/public/images/burgers/chicken-burger-with-pineapple.jfif"
+              alt="burger-exotic"
+              class="w-[500px] h-[500px] rounded-2xl ml-[6em]"
+            />
+          </div>
+          <div
+            class="flex justify-start bg-light-gray-4 p-10 rounded-3xl mb-12"
+          >
+            <div
+              class="flex flex-col justify-stard text-light-gray-2 text-[16px] ml-[3em]"
+            >
+              <h3 class="text-[2.5em] font-bold mb-6 uppercase">Колосальний</h3>
+              <p class="break-words">
+                Бургер "Колосальний" — це витвір кулінарного мистецтва для
+                справжніх гурманів. Чотири соковиті котлети з найкращої
+                говядини, зверху та знизу обтягнуті свіжим салатом, помідорами,
+                огірками та хрустким беконом. Цей бургер — це справжня експлозія
+                смаку та апетиту.
+              </p>
+              <h3 class="text-[1.5em] font-bold my-6">Склад бургера:</h3>
+              <ul class="list-disc list-inside">
+                <li>Чотири соковиті котлети з найкращої говядини</li>
+                <li>Соковитий томат та вибрані кільця цибулі</li>
+                <li>Плавленний сир, що тане на гарячому м'ясі</li>
+                <li>М'яка булочка, що тримає всі смакові емоції в єдності</li>
+                <li>
+                  Авторський соус, який додає пікантності та неповторності
+                </li>
+              </ul>
+              <p class="text-[1.5em] my-8 uppercase">Ціна: 345</p>
+            </div>
+            <img
+              src="/public/images/burgers/quadruple-burger.jfif"
+              alt="burger-giant"
+              class="w-[500px] h-auto rounded-2xl ml-[3em]"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      id="contacts"
+      class="w-full h-[120px] px-[52px] lg:px-[144px] py-[22px] flex justify-between items-center bg-light-gray-4 text-white mt-auto"
+    >
+      <h2 class="text-xl font-bold mb-4">Контакти</h2>
+      <p class="mb-2">Телефон: +380 123 456 789</p>
+      <p class="mb-2">Електронна пошта: heybro@example.com</p>
+      <p class="mb-2">Адреса: вул. Прикладна, 123, Київ</p>
+    </footer>
+    <button
+      id="scrollToTopBtn"
+      class="fixed right-4 bottom-4 w-10 h-10 bg-light-gray-4 text-white rounded-full hidden"
+    >
+      ↑
+    </button>
+    <script src="./app.js"></script>
+  </body>
+</html>
